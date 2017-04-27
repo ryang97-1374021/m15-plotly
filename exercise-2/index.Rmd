@@ -1,0 +1,25 @@
+---
+title: "index"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+library(plotly)
+
+## R Markdown
+
+```{r cars}
+library(plotly)
+p <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+p
+```
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+> Flynn served as the twenty-fifth national security advisor from January 20, 2017, to February 13, 2017. He was forced to resign after information surfaced he had misled Vice President Mike Pence about the nature and content of his communications with the Russian ambassador to the U.S., Sergey Kislyak.
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
